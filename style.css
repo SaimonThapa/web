@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: boder-box;
 }
 
@@ -22,6 +22,7 @@
 
 .calculator form input{
     border: 0;
+    border-radius: 70PX;
     outline: 0;
     width: 60px;
     height: 60px;
@@ -31,7 +32,7 @@
     font-size: 20px;
     color: #fff;
     cursor: pointer;
-    margin: 10px;
+    margin: 5px;
 }
 
 form .display{
@@ -43,14 +44,44 @@ form .display{
 form .display input{
     text-align: right;
     flex: 1;
-    font-size: 45px;
+    font-size: 40px;
     box-shadow: none;
+    background-color:none;
 }
 form input.equal{
     width: 145px;
+    color: white;
+    background-color: orange;
+    box-shadow: orange;
+}
+
+form input.equal:hover{
+    background-color: hsl(39, 95%, 60%);
+}
+form input.equal:active{
+    background-color: hsl(39, 95%, 70%);
 }
 
 form input.op{
-    color: green;
+    color: white;
+    background-color: orange;
+    box-shadow: orange;
+}
+form input.op:hover{
+    background-color: hsl(39, 95%, 60%);
 }
 
+form input.op:active{
+    background-color: hsl(39, 95%, 70%);
+}
+
+form input.opp{
+    background-color: grey;
+}
+orm input.opp:hover{
+    background-color: hsl(0, 0%, 60%);
+}
+
+form input.opp:active{
+    background-color: hsl(0, 0%, 70%);
+}
