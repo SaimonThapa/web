@@ -5,16 +5,17 @@
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 </head>
 <body>
+    <script src="script.js"></script>
     <div class="container">
         <div class="calculator">
             <form>
                 <div class="display">
-                    <input type="text" name="display">
+                    <input type="text" name="display" readonly>
                 </div>
                 <div>
-                    <input type="button" value="AC" onclick="display.value =' '" class="op">
-                    <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)" class="op">
-                    <input type="button" value="." onclick="display.value +='.'" class="op">
+                    <input type="button" value="AC" onclick="display.value =''" class="opp">
+                    <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)" class="opp">
+                    <input type="button" value="%" onclick="display.value +='%'" class="opp">
                     <input type="button" value="/" onclick="display.value +='/'" class="op">
                 </div>
                 <div>
@@ -36,9 +37,9 @@
                     <input type="button" value="+" onclick="display.value +='+'" class="op"> 
                 </div>  
                 <div>
-                    <input type="button" value="00">
-                    <input type="button" value="0">
-                    <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal">
+                    <input type="button" value="." onclick="display.value +='.'">
+                    <input type="button" value="0" onclick="display.value +='0'">
+                    <input type="button" value="=" onclick="display.value= eval(display.value)" class="equal">
 
                 </div>
 
