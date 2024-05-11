@@ -1,0 +1,30 @@
+body{
+    background-image: url("ktmimage.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "consolas", sans-serif;
+    box-sizing: border-box;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    height: 20vh;
+    background-color: aqua;
+    border-radius: 50px;
+
+}
+
+.vbox form input{
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 25px;
+    width: 210px;
+    cursor: pointer;
+}
